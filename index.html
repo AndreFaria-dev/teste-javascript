@@ -17,7 +17,7 @@
             <input type="number" placeholder="Altura. Exemplo: 170" id="altura">
             <input type="number" placeholder="Peso. Exemplo: 70" id="peso">
 
-            <button onclick="exercicio01(document.querySelector('#altura').value,document.querySelector('#peso').value)">Rodar</button>
+            <button onclick="exercicio02(document.querySelector('#altura').value,document.querySelector('#peso').value)">Rodar</button>
             <button type="reset">Limpar</button>
         </div>
 
@@ -38,13 +38,25 @@
     </div>
     <div class="panel">
         <h2>Exercício IV</h2>
-        <p>medidas dos três lados de um triângulo</p>
+        <p>Calcular parcelas</p>
         <div class="form">
-            <input type="number" placeholder="dia" id="dia" min="1" max="31">
-            <input type="number" placeholder="mes" id="mes" min="1" max="12">
-            <input type="number" placeholder="dia" id="ano" min="1900" max="2100">
+            <input type="number" placeholder="Informe o valor do carro" id="valorCarro" min="1000">
+            
+            <label for="qtdParcelas">Quantidade de parcelas</label>
 
-            <button onclick="exercicio04(document.getElementById('dia').value, document.getElementById('mes').value, document.getElementById('ano').value)">Rodar</button>
+            <select id="qtdParcelas">
+                <option value="6">6</option>
+                <option value="12">12</option>
+                <option value="18">18</option>
+                <option value="24">24</option>
+                <option value="30">30</option>
+                <option value="36">36</option>
+                <option value="42">42</option>
+                <option value="48">48</option>
+                <option value="54">54</option>
+                <option value="60">60</option>
+              </select>
+            <button onclick="exercicio04(document.querySelector('#valorCarro').value, document.querySelector('#qtdParcelas').value)">Rodar</button>
             <button type="reset">Limpar</button>
         </div>
     </div>
