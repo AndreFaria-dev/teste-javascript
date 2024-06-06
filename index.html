@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Atividade II</title>
+</head>
+
+<body>
+
+    <div class="panel">
+        <h2>Exercício II</h2>
+        <p>IMC</p>
+        <div class="form">
+            <input type="number" placeholder="Altura. Exemplo: 170" id="altura">
+            <input type="number" placeholder="Peso. Exemplo: 70" id="peso">
+
+            <button onclick="exercicio01(document.querySelector('#altura').value,document.querySelector('#peso').value)">Rodar</button>
+            <button type="reset">Limpar</button>
+        </div>
+
+
+    </div>
+
+    <div class="panel">
+        <h2>Exercício III</h2>
+        <p>Informações sobre triângulo</p>
+        <div class="form">
+            <input type="number" placeholder="Valor 1" id="t1">
+            <input type="number" placeholder="Valor 2" id="t2">
+            <input type="number" placeholder="Valor 3" id="t3">
+
+            <button onclick="exercicio03(document.getElementById('t1').value, document.getElementById('t2').value,document.getElementById('t3').value)">Rodar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </div>
+    <div class="panel">
+        <h2>Exercício IV</h2>
+        <p>medidas dos três lados de um triângulo</p>
+        <div class="form">
+            <input type="number" placeholder="dia" id="dia" min="1" max="31">
+            <input type="number" placeholder="mes" id="mes" min="1" max="12">
+            <input type="number" placeholder="dia" id="ano" min="1900" max="2100">
+
+            <button onclick="exercicio04(document.getElementById('dia').value, document.getElementById('mes').value, document.getElementById('ano').value)">Rodar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </div>
+
+
+
+    <div id="output"></div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
